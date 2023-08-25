@@ -32,8 +32,9 @@
             // Make sure that the formMessages div has the 'success' class.
             $(formMessages).removeClass('error');
             $(formMessages).addClass('success');
-            thankYouMessage.setAttribute('aria-hidden', 'false');
             formMessages.innerHTML = thankYouMessage.innerHTML;
+            formMessages.setAttribute('aria-hidden', 'false');
+            formMessages.style.display = "block";
             // Clear the form.
             $('#name, #lastName, #email').val('');
           } else {
