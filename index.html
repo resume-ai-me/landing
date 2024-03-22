@@ -1,945 +1,1393 @@
 <!DOCTYPE html>
-<html lang="zxx"> 
-	<head>
-		<!--Gtag-->
-			<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5PJ9PQ7TT"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<html lang="zxx">
+  <head>
+    <!--Gtag-->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K5PJ9PQ7TT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-			gtag('config', 'G-K5PJ9PQ7TT');
-		</script>
-		<!-- meta tag -->
-		<meta charset="utf-8">
-		<title>Resume-ai, revolutionize your job search</title>
-		<meta name="description" content="">
-		<!-- responsive tag -->
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- favicon -->
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-		<!-- Bootstrap v4.4.1 css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-		<!-- font-awesome css -->
+      gtag("config", "G-K5PJ9PQ7TT");
+    </script>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <title>Resume-ai, revolutionize your job search</title>
+    <meta name="description" content="" />
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/fav.png"
+    />
+    <!-- Bootstrap v4.4.1 css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <!-- font-awesome css -->
 
-		<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
-		<!-- Remixicon css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
-		<!-- flaticon css -->
-		<link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-		<!-- animate css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-		<!-- slick css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-		<!-- off canvas css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
-		<!-- magnific popup css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-		<!-- Main Menu css -->
-		<link rel="stylesheet" href="assets/css/rsmenu-main.css">
-		<!-- spacing css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/rs-spacing.css">
-		<!-- style css -->
-		<link rel="stylesheet" type="text/css" href="style.css"> <!-- This stylesheet dynamically changed from style.less -->
-		<!-- responsive css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css" />
+    <!-- Remixicon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css" />
+    <!-- flaticon css -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+    <!-- magnific popup css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/magnific-popup.css"
+    />
+    <!-- Main Menu css -->
+    <link rel="stylesheet" href="assets/css/rsmenu-main.css" />
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/rs-spacing.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- This stylesheet dynamically changed from style.less -->
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
 
-		<!--datadog tag-->
-		<script>
-			(function(h,o,u,n,d) {
-			  h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-			  d=o.createElement(u);d.async=1;d.src=n
-			  n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-			})(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v4/datadog-rum.js','DD_RUM')
-			window.DD_RUM.onReady(function() {
-			  window.DD_RUM.init({
-				clientToken: 'pubc1c7d9fa3da0b1ff248203eec0dca40a',
-				applicationId: 'ee52e3e3-b431-43c6-9e28-44c8f64b6239',
-				site: 'datadoghq.com',
-				service: 'resume-ai',
-				env: 'prod',
-				// Specify a version number to identify the deployed version of your application in Datadog 
-				// version: '1.0.0', 
-				sessionSampleRate: 100,
-				sessionReplaySampleRate: 50,
-				trackUserInteractions: true,
-				trackResources: true,
-				trackLongTasks: true,
-				defaultPrivacyLevel: 'mask-user-input',
-			  });
-		  
-			  window.DD_RUM.startSessionReplayRecording();
-			})
-		  </script>
-		  <!--rewardful-->
-		  <script>(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');</script>
-		  <script async src='https://r.wdfl.co/rw.js' data-rewardful='3a5c60'></script>
-	</head>
+    <!--datadog tag-->
+    <script>
+      (function (h, o, u, n, d) {
+        h = h[d] = h[d] || {
+          q: [],
+          onReady: function (c) {
+            h.q.push(c);
+          },
+        };
+        d = o.createElement(u);
+        d.async = 1;
+        d.src = n;
+        n = o.getElementsByTagName(u)[0];
+        n.parentNode.insertBefore(d, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.datadoghq-browser-agent.com/us1/v4/datadog-rum.js",
+        "DD_RUM"
+      );
+      window.DD_RUM.onReady(function () {
+        window.DD_RUM.init({
+          clientToken: "pubc1c7d9fa3da0b1ff248203eec0dca40a",
+          applicationId: "ee52e3e3-b431-43c6-9e28-44c8f64b6239",
+          site: "datadoghq.com",
+          service: "resume-ai",
+          env: "prod",
+          // Specify a version number to identify the deployed version of your application in Datadog
+          // version: '1.0.0',
+          sessionSampleRate: 100,
+          sessionReplaySampleRate: 50,
+          trackUserInteractions: true,
+          trackResources: true,
+          trackLongTasks: true,
+          defaultPrivacyLevel: "mask-user-input",
+        });
 
-	<body class="defult-home">
-		
-		<div class="offwrap"></div>
+        window.DD_RUM.startSessionReplayRecording();
+      });
+    </script>
+    <!--rewardful-->
+    <script>
+      (function (w, r) {
+        w._rwq = r;
+        w[r] =
+          w[r] ||
+          function () {
+            (w[r].q = w[r].q || []).push(arguments);
+          };
+      })(window, "rewardful");
+    </script>
+    <script
+      async
+      src="https://r.wdfl.co/rw.js"
+      data-rewardful="3a5c60"
+    ></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "377514585157557");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=377514585157557&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
 
-		<!--Preloader start here-->
-	   	<div id="pre-load">
-            <div id="loader" class="loader">
-                <div class="loader-container">
-                    <div class="loader-icon"><img src="assets/images/fav.png" alt="resume-ai"></div>
-                </div>
-            </div>              
+  <body class="defult-home">
+    <div class="offwrap"></div>
+
+    <!--Preloader start here-->
+    <div id="pre-load">
+      <div id="loader" class="loader">
+        <div class="loader-container">
+          <div class="loader-icon">
+            <img src="assets/images/fav.png" alt="resume-ai" />
+          </div>
         </div>
-		<!--Preloader area end here-->
-			
-		<!-- Main content Start -->
-		<div class="main-content">
+      </div>
+    </div>
+    <!--Preloader area end here-->
 
-			<!--Full width header Start-->
-			<div class="full-width-header">
-				<!--Header Start-->
-				<header id="rs-header" class="rs-header header-style1 header-modify7">
-					<!-- Menu Start -->
-					<div class="menu-area menu-sticky">
-						<div class="container-fluid">
-							<div class="row-table">
-								<div class="col-cell header-logo">                                  
-								    <div class="logo-area">
-								        <a href="index.html">
-								            <img class="normal-logo" src="assets/images/logo.png" alt="logo">  
-								            <img class="sticky-logo" src="assets/images/logo.png" alt="logo">
-								        </a>
-								    </div>
-								</div>
-								<div class="col-cell">
-									<div class="rs-menu-area">
-										<div class="main-menu">
-											<nav class="rs-menu hidden-md">
-												<ul class="nav-menu">
-													<li class="menu-item current-menu-item">
-														<a href="#">Home</a>
-													</li>
-													<li class="menu-item">
-														<a href="#about-us">About</a>
-													</li>													
-													<li class="menu-item">
-														<a href="#features">Features</a>
-													</li>
-													<li class="menu-item">
-														<a href="#testimonials">Testimonials</a>
-													</li>
-													<li class="menu-item">
-														<a href="#pricing">Pricing</a>
-													</li>
-													<li class="last-item menu-item">
-														<a href="https://billing.stripe.com/p/login/14k5ntbdn5S8fOE5kk">Manage Account</a>
-													</li>
-												</ul> <!-- //.nav-menu -->
-											</nav>
-										</div> <!-- //.main-menu -->
-									</div>
-								</div>
-								<div class="col-cell">
-									<div class="expand-btn-inner">
-										<ul>
-											<li class="btn-signin">
-				                                <a class="signin-button" href="https://resume-ai.zapier.app/">
-				                                	<span class="sign-text"><i class="ri-user-3-line"></i> Sign In </span>
-				                                </a>
-											</li>
-											<li class="btn-quote">
-												<a id="signup-link" href="#"><span class="btn-text"><i class="ri-download-line"></i> Sign Up</span></a>
-											  </li>
-                                            <li class="nav-link"> 
-                                                <a id="nav-expander" class="nav-expander bar" href="#">
-                                                   	<div class="bar">
-                                                   		<span class="dot1"></span>
-                                                   		<span class="dot2"></span>
-                                                   		<span class="dot3"></span>
-                                                   	</div>                                          
-                                                </a> 
-                                            </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Menu End -->
-
-					<!-- Canvas Mobile Menu start -->
-					<nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
-					    <div class="close-btn">
-					        <a id="nav-close2" class="nav-close">
-					            <div class="line">
-					                <span class="line1"></span>
-					                <span class="line2"></span>
-					            </div>
-					        </a>
-					    </div>
-						<ul class="nav-menu">
-							<li class="menu-item current-menu-item">
-								<a href="#">Home</a>
-							</li>
-							<li class="menu-item">
-								<a href="#about-us">About</a>
-							</li>													
-							<li class="menu-item">
-								<a href="#features">Features</a>
-							</li>
-							<li class="menu-item">
-								<a href="#testimonials">Testimonials</a>
-							</li>
-							<li class="menu-item">
-								<a href="#pricing">Pricing</a>
-							</li>
-							<li class="last-item menu-item">
-								<a href="https://billing.stripe.com/p/login/14k5ntbdn5S8fOE5kk">Manage Account</a>
-							</li>
-						</ul>
-					    <!-- //.nav-menu -->
-					   
-					    <!-- //.nav-menu -->
-    				    <div class="canvas-contact">
-    				        <ul>
-    							<li class="btn-signin">
-                                    <a class="signin-button" href="https://resume-ai.zapier.app/">
-                                    	<span class="sign-text"><i class="ri-user-3-line"></i> Sign In </span>
-                                    </a>
-    							</li>
-    							<li class="btn-quote">
-    								<a href="contact-1.html"><span class="btn-text"><i class="ri-download-line"></i> Download</span></a>
-    							</li>
-    						</ul>
-    				    </div>
-					</nav>
-					<!-- Canvas Menu end -->                             
-				</header>
-				<!--Header End-->
-			</div>
-			<!--Full width header End-->
-		
-			<!-- Banner Start -->
-			<div class="rs-banner banner-style10">
-				<div class="container custom2">
-					<div class="content-wrap">
-						<h1 class="title">RESUME-AI.ME</h1>
-						<h1 class="title">Get Noticed, Get Hired</h1>
-						<div class="description">
-							<p>
-								Empower Your Independence & Provide for Your Family's Future with resume-ai.me 
-							</p>
-						</div>
-						<div class="btn-part mt-40">
-							<a id="signup-button" class="readon started sasco" href="#">
-								<span class="btn-text">Sign Up Now</span>
-								<i class="ri-arrow-right-line"></i>
-							  </a>
-						</div>
-					</div>
-				</div>
-				<div class="banner-animate">
-					<div class="bnr-animation one">
-						<img class="spiner" src="assets/images/banner/style10/shape1.png" alt="">
-					</div>
-					<div class="bnr-animation two">
-						<img class="spiner" src="assets/images/banner/style10/shape2.png" alt="">
-					</div>
-					<div class="bnr-animation three">
-						<img class="left-right2" src="assets/images/banner/style10/shape3.png" alt="">
-					</div>
-					<div class="bnr-animation four">
-						<img class="scale" src="assets/images/banner/style10/shape4.png" alt="">
-					</div>
-				</div>
-			</div>
-			<!-- Banner End -->
-
-			<!-- Partner Start -->
-			<div class="rs-partner partner-style2 partner-modify1 pt-70 pb-70">
-			    <div class="container">
-			    	<div class="sec-title text-center mb-40">
-			    		<h3 class="title title3">
-			    			Trusted by hundreds of job seekers, now including you.  Take action now!
-			    		</h3>
-			    	</div>               
-			       <div class="slider partner-slide-1">
-			       </div>
-			       <div class="ptnr-border-bottom"></div>
-			    </div>
-			</div>
-			<!-- Partner End -->
-
-			<!-- About Start -->
-			<div id="about-us" class="rs-about about-style1 about-modify1 pt-110 pb-130 md-pt-10 md-pb-0">
-				<div class="container custom6">
-					<div class="row y-middle">
-						<div class="col-lg-6 md-mb-50">
-							<div class="about-img">
-								<img class="js-tilt" src="assets/images/about/style5/about-11.jpg" alt="Images">
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="sec-title">
-								<h2 class="title pb-25">
-									Invest in your future now
-								</h2>
-								<p class="desc pb-15">
-									We are dedicated to helping you land your dream job. Our comprehensive suite of services is designed to give you a competitive edge in today's job market. For only $30 a month, you gain unlimited access to our game-changing tools.
-								</p>
-								<p class="desc">
-									Resume reviews, cover letter writing, curated job boards and more. Consider signing up with resume-ai.me. Invest in your future.
-								</p>
-		        				<div class="btn-part mt-45">
-		        					<a class="readon started contact" href="#">
-		        						<span class="btn-text">Get Started</span>
-		        					</a>
-		        				</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- About End -->
-
-			<!-- Feature Start -->
-			<div id="features" class="rs-feature feature-style2 feature-modify4 pb-140 md-pt-70 md-pb-80">
-				<div class="container">
-					<div class="row y-middle">
-						<div class="col-lg-6 md-mb-50">
-							<div class="feature-btn-wrap">
-								<div class="sec-title mb-40">
-									<h2 class="title pb-25">
-										Take Your Job Search To The Next Level
-									</h2>
-									<p class="desc pb-30">
-										At resume-ai we understand the challenges of job hunting and offer comprehensive solutions to help job seekers stand out from the crowd.
-									</p>
-									<ul class="check-lists check-style6">
-			        					<li class="list-item">
-											<span class="icon-list-icon">
-												<i class="fa-solid fa-check-circle"></i>						
-											</span>
-											<span class="list-text">Expert resume reviews</span>
-										</li>
-										<li class="list-item">
-											<span class="icon-list-icon">
-												<i class="fa-solid fa-check-circle"></i>						
-											</span>
-											<span class="list-text">Personalized cover letters</span>
-										</li>
-										<li class="list-item">
-											<span class="icon-list-icon">
-												<i class="fa-solid fa-check-circle"></i>						
-											</span>
-											<span class="list-text">Interview training</span>
-										</li>
-										<li class="list-item">
-											<span class="icon-list-icon">
-												<i class="fa-solid fa-check-circle"></i>						
-											</span>
-											<span class="list-text">Curated job boards!</span>
-										</li>
-			        				</ul>
-								</div>
-								<ul class="bnr-wrap">
-									<li>
-										<a class="readon started contact" href="#">
-											<span class="btn-text">Get Started</span>
-										</a>
-									</li>	
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="feature-img">
-								<img class="js-tilt" src="assets/images/about/style5/about-12.jpg" alt="Images">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Feature End -->
-			
-			<!-- Services Start -->
-			<div class="rs-services services-style8 gray-bg15 pt-130 pb-130 md-pt-80 md-pb-80">
-				<div class="container">
-					<div class="sec-title text-center mb-55 md-mb-35">
-						<h2 class="title pb-25">
-							Multiple Tools In One Suite.<br> 
-							What's Inside?				
-						</h2>
-						<p class="desc">
-							Various of the best tools to monitor & manage every aspect of your job Search. A must-have product<br> 
-							to domainate the competition and land your dream job!
-						</p>
-					</div>
-					<div class="row">
-						<div class="col-xl-4 col-md-6 mb-30">
-			    			<div class="services-item">
-			    				<div class="services-wrap">
-				    				<div class="services-icon">
-				    					<img src="assets/images/services/style10/ser-1.png" alt="Images">
-				    				</div>
-				    				<div class="services-content">
-				    					<h4 class="title"><a href="services-details.html">Resume Review</a></h4>
-				    					<p class="services-txt">Boost your resume with our AI Powered resume review service!
-										</p>
-				    				</div>
-			    				</div>
-			    			</div>
-						</div>
-						<div class="col-xl-4 col-md-6 mb-30">
-			    			<div class="services-item">
-			    				<div class="services-wrap">
-				    				<div class="services-icon">
-				    					<img src="assets/images/services/style10/ser-2.png" alt="Images">
-				    				</div>
-				    				<div class="services-content">
-				    					<h4 class="title"><a href="services-details.html">Custom Cover Letters</a></h4>
-				    					<p class="services-txt">Create captivating cover letters that compel hiring managers to take notice.</p>
-				    				</div>
-			    				</div>
-			    			</div>
-						</div>
-						<div class="col-xl-4 col-md-6 mb-30">
-			    			<div class="services-item">
-			    				<div class="services-wrap">
-				    				<div class="services-icon">
-				    					<img src="assets/images/services/style10/ser-3.png" alt="Images">
-				    				</div>
-				    				<div class="services-content">
-				    					<h4 class="title"><a href="services-details.html">Job Boards</a></h4>
-				    					<p class="services-txt">Comprehensive collection of job boards tailored to meet your specific needs.</p>
-				    				</div>
-			    				</div>
-			    			</div>
-						</div>
-						<div class="col-xl-4 col-md-6 xl-mb-30">
-			    			<div class="services-item">
-			    				<div class="services-wrap">
-				    				<div class="services-icon">
-				    					<img src="assets/images/services/style10/ser-4.png" alt="Images">
-				    				</div>
-				    				<div class="services-content">
-				    					<h4 class="title"><a href="services-details.html">Interview Training</a></h4>
-				    					<p class="services-txt">AI interview preparation specifically to the job you're applying for.</p>
-				    				</div>
-			    				</div>
-			    			</div>
-						</div>
-						<div class="col-xl-4 col-md-6 sm-mb-30">
-			    			<div class="services-item">
-			    				<div class="services-wrap">
-				    				<div class="services-icon">
-				    					<img src="assets/images/services/style10/ser-5.png" alt="Images">
-				    				</div>
-				    				<div class="services-content">
-				    					<h4 class="title"><a href="services-details.html">Soon! - Application tracker</a></h4>
-				    					<p class="services-txt">Understand the status of each one of your applications.</p>
-				    				</div>
-			    				</div>
-			    			</div>
-						</div>
-						<div class="col-xl-4 col-md-6">
-			    			<div class="services-item">
-			    				<div class="services-wrap">
-				    				<div class="services-icon">
-				    					<img src="assets/images/services/style10/ser-6.png" alt="Images">
-				    				</div>
-				    				<div class="services-content">
-				    					<h4 class="title"><a href="services-details.html">Soon! - Email Follow-up</a></h4>
-				    					<p class="services-txt">Automate following up during the application process so you can outshine the competition.</p>
-				    				</div>
-			    				</div>
-			    			</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Services End -->
-
-			<!-- Services Start -->
-			<div id="rs-services" class="rs-services services-style9 pt-130 pb-130 md-pt-80 md-pb-80">
-				<div class="container">
-					<div class="row y-middle">
-						<div class="col-lg-6 md-mb-50">
-							<div class="sec-title mb-40">
-								<h2 class="title pb-25">
-									Land your dream job!			
-								</h2>
-								<p class="desc">
-									No more dead linkedin links, enhance your resume, create custom tailored cover letters, and practice for interviews.
-								</p>
-							</div>
-							<div class="services-item mb-30">
-								<div class="services-icon">
-									<img src="assets/images/services/style11/icons/home1/1.png" alt="">
-								</div>
-								<div class="services-text">
-									<h2 class="title">Resume Review</h2>
-									<p>We use advanced AI technology to analyze your resume for grammar, punctuation, sentence structure, and content based on your industry.
-									Our app also checks for ATS compatibility to ensure that your resume is optimized for applicant tracking systems.										
-									With unlimited reviews, you can refine your resume until it's perfect, without any extra costs.</p>
-								</div>
-							</div>
-							<div class="services-item mb-30">
-								<div class="services-icon">
-									<img src="assets/images/services/style11/icons/home1/2.png" alt="">
-								</div>
-								<div class="services-text">
-									<h2 class="title">Custom Cover Letters</h2>
-									<p>We understand the crucial role a well-crafted cover letter plays in capturing the attention of employers and showcasing your unique value.
-										Our AI-powered platform empowers you to create compelling cover letters that captivates and compels hiring managers to take notice.</p>
-								</div>
-							</div>
-							<div class="services-item">
-								<div class="services-icon">
-									<img src="assets/images/services/style11/icons/home1/3.png" alt="">
-								</div>
-								<div class="services-text">
-									<h2 class="title">Interview Practice</h2>
-									<p>Preparing for job interviews can be daunting, but with resume-ai.me's AI-Powered interview preparation, you can confidently tackle any interview. 
-										Our cutting-edge AI technology tailors interview preparation specifically to the job you're applying for, giving you a competitive edge like never before.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="services-img">
-								<img class="js-tilt" src="assets/images/services/style11/ser-image11.jpg" alt="Images">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Services End -->
-			
-			<!-- Pricing Start -->
-			<div id="pricing" class="pricing-container rs-pricing-container pricing-style1 pricing-modify4 gray-bg16 pt-130 pb-130 md-pt-80 md-pb-80 text-centered">	
-				<div class="sec-title text-center mb-55 md-mb-35">
-					<h2 class="title">
-						Select the right Option<br> 
-						for you.							
-					</h2>
-				</div>
-				<div class="pricing-switcher">
-	                <p class="fieldset mnt-ac">
-	                    <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked="">
-	                    <label for="monthly-1" id="rsmnt" class="rs-mnt">Monthly  </label>
-	                    <input type="radio" name="duration-1" value="yearly" id="yearly-1">
-	                    <label for="yearly-1" id="rsyrs" class="rs-yrs">Yearly  </label>
-	                    <span class="switch"></span>
-	                </p>
-	            </div>
-	            <div class="container text-center">
-					<ul class=" bounce-invert">
-						<li class="exclusive md-mb-50">
-						    <ul class="pricing-wrapper">                            
-						        <li data-type="monthly" class="is-visible">
-						            <header class="pricing-header">
-						            	<h3 class="title">Monthly</h3>
-						            	<div class="price-inner">
-						            	  <div class="price">$30.00</div>
-						            	    <span>/ Month</span>
-						            	</div>                                   
-						            </header>
-						            <div class="pricing-body">  
-							            <div class="features">
-							            	<ul>
-									            <li>Unlimited Resume Reviews</li>
-									            <li>Unlimited Cover Letters</li>
-									            <li>Unlimited Interview Training</li>
-									            <li>Unlimited Job Board Access</li>
-									            <li>Unlimited access to all future enhancements</li>
-							            	</ul>
-							        	</div>
-						            </div>
-						            <footer class="pricing-footer">
-						            	<a href="#">Get Started</a>
-						            </footer>
-						        </li>
-						        <li data-type="yearly" class="is-hidden mx-auto">
-			           	            <header class="pricing-header">
-			           	            	<h3 class="title">Yearly</h3>
-			           	            	<div class="price-inner">
-			           	            	  <div class="price">$300.00</div>
-			           	            	    <span>/ Year</span>
-			           	            	</div>                                   
-			           	            </header>
-			           	            <div class="pricing-body">  
-			           		            <div class="features">
-			           		            	<ul>
-									            <li>Unlimited Resume Reviews</li>
-									            <li>Unlimited Cover Letters</li>
-									            <li>Unlimited Interview Training</li>
-									            <li>Unlimited Job Board Access</li>
-									            <li>Unlimited access to all future enhancements</li>
-												<li class="fa fa-dollar"><strong>Save $60.00 per year</strong></li>
-			           		            	</ul>
-			           		        	</div>
-			           	            </div>
-						            <footer class="pricing-footer">
-						            	<a href="#">Get Started</a>
-						            </footer>
-						        </li>
-						    </ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- Pricing End -->
-
-			<!-- Testimonial Section End -->
-			<div id="testimonials" class="rs-testimonial testimonial-style2 testimonial-modify7 pt-130 pb-170 md-pt-80 md-pb-120">				
-				<div class="container custom4">
-					<div class="sec-title text-center mb-55">
-						<h2 class="title">
-							What our customers<br> 
-							are saying				
-						</h2>
-					</div>
-					<div class="slider testi-slide-1">
-						<div class="testi-item">
-						   <div class="item-content">
-						   		<span>
-						   			<img class="normal-logo" src="assets/images/testimonial/style1/quote-1.png" alt="Testimonial">
-						   			<img class="hover-logo" src="assets/images/testimonial/style1/quote-7.png" alt="Testimonial">
-						   		</span>
-						   		<p>Fast and Insightful - It helped me highlight my strategic strengths, gave formatting tips, and rewrote the about me section tailored to a job I wanted to apply to.</p>
-						   </div>
-						   <div class="testi-content">
-					   		   <div class="rattings">
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star star-color"></i>
-					   		   </div>
-						   		<div class="testi-information">
-							   		<div class="testi-name">Alejandra Perez</div>
-							   		<span class="testi-title">Medical Technologist</span>
-							   	</div>
-						   </div>
-						</div>
-						<div class="testi-item">
-						   <div class="item-content">
-						   		<span>
-						   			<img class="normal-logo" src="assets/images/testimonial/style1/quote-1.png" alt="Testimonial">
-						   			<img class="hover-logo" src="assets/images/testimonial/style1/quote-7.png" alt="Testimonial">
-						   		</span>
-						   		<p>A revolutionary tool - This AI-powered solution streamlines the entire job search process, taking the pain of crafting the perfect resume and application.</p>
-						   </div>
-						   <div class="testi-content">
-					   		   <div class="rattings">
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star star-color"></i>
-					   		   </div>
-						   		<div class="testi-information">
-							   		<div class="testi-name">Anastasia Veselova</div>
-							   		<span class="testi-title">Anxiety Disorder</span>
-							   	</div>
-						   </div>
-						</div>
-						<div class="testi-item">
-						   <div class="item-content">
-						   		<span>
-						   			<img class="normal-logo" src="assets/images/testimonial/style1/quote-1.png" alt="Testimonial">
-						   			<img class="hover-logo" src="assets/images/testimonial/style1/quote-7.png" alt="Testimonial">
-						   		</span>
-						   		<p>Blown Away - I recently used resume_ai as a tool to improve my resume and I was blown away by its capabilities. It was quite easy to use and the feedback it provided for my resume was accurate. The cover letter writing tool was pretty spot on too. Check them out!.</p>
-						   </div>
-						   <div class="testi-content">
-					   		   <div class="rattings">
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star"></i>
-					   			   	<i class="fa fa-star star-color"></i>
-					   		   </div>
-						   		<div class="testi-information">
-							   		<div class="testi-name">Ana Maria Delgado</div>
-							   		<span class="testi-title">Instructional Designer</span>
-							   	</div>
-						   </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Testimonial Section End -->
-
-			<!-- Faq Section Start -->
-			<div class="rs-faq faq-style1 faq-modify6 bg12 pt-140 pb-140 md-pt-80 md-pb-80">
-			  	<div class="container">
-				   <div class="row y-middle">
-				   		<div class="col-lg-6 md-mb-50">
-							<div class="sec-title mb-45">
-								<h2 class="title pb-25 white-color">
-									Are you ready to transform your job search?
-								</h2>
-								<p class="desc desc3">
-									Grab your FREE guide and take the first step towards unlocking your dream job.
-								</p>
-							</div>
-		   					<div class="faq-content">
-		   					    <div id="accordion" class="accordion">
-		   					       <div class="card">
-		   					           <div class="card-header">
-		   					               <a class="card-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">The Power of AI in Your Hands</a>
-		   					           </div>
-		   					           <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-		   					               <div class="card-body">
-											In a competitive job market, having a standout resume is non-negotiable. 
-											But crafting a compelling resume can be daunting, especially when you're up against countless others vying for the same positions. 
-											This is where resume-ai.me steps in - we bring the power of AI to your fingertips, revolutionizing the way you present your skills and experience.
-		   					               </div>
-		   					           </div>
-		   					       </div>
-		   					       <div class="card">
-		   					           <div class="card-header">
-		   					               <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">Your Pathway to Success</a>
-		   					           </div>
-		   					           <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" style="">
-		   					               <div class="card-body">
-											We believe that everyone deserves a chance to shine professionally. 
-											Our AI-driven platform ensures that your resume, cover letter, and interview process not only gets noticed but leaves a lasting impression on employers. 
-											Whether you're an entry-level professional or a seasoned expert, our technology tailors your resume to match your target job description, highlighting your strengths in alignment with the role's requirements.
-		   					               </div>
-		   					           </div>
-		   					       </div>
-		   					       <div class="card">
-		   					           <div class="card-header">
-		   					               <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">Empowering Independence</a>
-		   					           </div>
-		   					           <div id="collapseThree" class="collapse" data-bs-parent="#accordion" style="">
-		   					               <div class="card-body">
-											Being independent is more than just a financial state, it's a mindset. We're committed to empowering you to regain control over your career path. 
-											By equipping you with a compelling set of AI tools that set your job search journey to align with your aspirations, we're helping you take the first step toward regaining your professional independence.
-		   					               </div>
-		   					           </div>
-		   					       </div>
-		   					       <div class="card">
-		   					           <div class="card-header">
-		   					               <a class="card-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">Your FREE Guide to Enhancing Your Resume</a>
-		   					           </div>
-		   					           <div id="collapseFour" class="collapse" data-bs-parent="#accordion" style="">
-		   					               <div class="card-body">
-											As a gesture of our dedication, we're offering you a FREE downloadable PDF resume guide that's packed with invaluable insights on how to enhance your resume. 
-											This guide is tailor-made for those who are unemployed or recently laid off, providing actionable tips to revamp your resume and stand out in today's competitive job landscape.
-		   					               </div>
-		   					           </div>
-		   					       </div> 
-		   					    </div>
-		   					</div>
-				   		</div>
-		   		   		<div class="col-lg-6 pl-65 md-pl-15">	
-		   					<!-- Contact Start -->
-		   					<div class="rs-contact contact-style2 contact-modify2">
-		   						<div class="content-wrap">
-		   							<div class="sec-title mb-30">
-		   								<h2 class="title">
-		   									Grab your FREE resume guide today!
-		   								</h2>
-		   							</div>
-		   							<div id="form-messages"></div>
-		   							<form id="contact-form" method="post" action="https://hooks.zapier.com/hooks/catch/3042365/35mvhhi/">
-		   							    <fieldset>
-		   							        <div class="row">
-		   							            <div class="col-sm-12 mb-25">
-		   							            	<div class="form-group">
-		   						            			<i class="ri-user-3-line"></i>
-		   						            		    <input class="from-control" type="text" id="name" name="name" placeholder="Enter Your name" required="">
-		   							            	</div>
-		   							            </div> 
-												   <div class="col-sm-12 mb-25">
-													<div class="form-group">
-														<i class="ri-user-3-line"></i>
-														<input class="from-control" type="text" id="lastName" name="lastName" placeholder="Enter Your last name" required="">
-													</div>
-												</div>
-		   							            <div class="col-sm-12 mb-25">
-		   							            	<div class="form-group">
-		   						            			<i class="ri-mail-line"></i>
-		   						            		    <input class="from-control" type="text" id="email" name="email" placeholder="Enter your email address" required="">
-		   							            	</div>
-		   							            </div> 
-		   							        </div>
-		   							      	<div class="btn-part">                                            
-		   							      	    <div class="form-group mt-25">
-		   							      	        <input class="readon submit submit3" type="submit" value="Get my guide now!">
-		   							      	    </div>
-		   							      	</div> 
-		   							    </fieldset>
-		   							</form> 
-		   						</div>
-		   						<div class="sec-title text-right pt-40 md-text-center">
-		   							<h5 class="title title7 white-color">
-		   								Don't miss out on the best guide out there
-		   							</h5>
-		   						</div>
-		   					</div>
-
-							<div>
-								<!-- thank you for downloading-->
-								<div class="rs-contact contact-style2 contact-modify2" id="thankYouMessage" aria-labelledby="thankYouMessage" aria-hidden="true" style="display: none;">
-									<div class="thank-you-pop">
-										<h1>Thank You!</h1>
-										<p>Your Free PDF will arrive soon, as a thank you, here is a coupon code to get you 30% off on your first month</p>
-										<a href="#">
-											<h3 class="cupon-pop">CODE: <span>THANKYOU</span></h3>
-										</a>
-									</div>
-									<div class="btn-part mt-45">
-										<a class="readon started contact promo" href="#">
-											<span class="btn-text">Get Your Discount Now!</span>
-										</a>
-									</div>
-								</div>	
-							</div>
-		   					<!-- Contact End -->
-		   		   		</div>
-				   </div>
-			  	</div>
-			  	<div class="faq-animate">
-			  		<div class="arrow-animate">
-			  			<img src="assets/images/contact/arrow-indicator.png" alt="images">
-			  		</div>
-			  	</div>
-			</div>
-			<!-- Faq Section End -->
-
-			<!-- Faq Section Start -->
-			<div class="rs-cta bg11 pt-85 pb-85 md-pt-65 md-pb-65">
-			  	<div class="container">
-   					<div class="sec-title text-center">
-   						<h2 class="title pb-22 white-color">
-   							Get started with resume-ai.me today
-   						</h2>
-   						<p class="desc desc3">
-   							Start investing in yourself and get the job of your dreams. Cancel anytime.
-   						</p>
-           				<div class="btn-part mt-40">
-           					<a class="readon started sasco" href="#">
-   								<span class="btn-text">Start Today</span>
-   							</a>
-           				</div>
-   					</div>
-			  	</div>
-			</div>
-			<!-- Faq Section End -->
-		</div> 
-		<!-- Main content End -->
-
-		<!-- Footer Start -->
-		<footer id="rs-footer" class="rs-footer footer-main-home footer-modify10">
-			<div class="container">
-				<div class="footer-top">
-					<div class="row">
-						<div class="col-lg-4 md-mb-20">
-							<div class="footer-logo">
-								<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-							</div>
-							<p class="widget-desc"></p>
-							<ul class="footer-social md-mb-30">  
-                                <li><a href="https://www.facebook.com/resumeai.me"><i class="fa-brands fa-facebook"></i></a></li>                     
-                                <li><a href="https://www.twitter.com/resume_ai"><i class="fa-brands fa-twitter"></i></a></li>                     
-                                <li><a href="https://www.linkedin.com/company/resume-ai-me"><i class="fa-brands fa-linkedin"></i></a></li>
-								<li><a href="https://www.youtube.com/@resume-ai/"><i class="fa-brands fa-youtube"></i></a></li>                                        
-                                <li><a href="https://www.tiktok.com/@resume_ai.me"><i class="fa-brands fa-tiktok"></i></a></li>                     
-                          	</ul>
-						</div>
-						<div class="col-lg-8 pl-110 md-pl-15">
-							<div class="row">
-								<div class="col-lg-4 md-mb-10">
-									<h3 class="footer-title">About</h3>
-									<ul class="site-map">
-		                                <li><a href="#about-us">About</a></li>
-		                                <li><a href="#features">Features</a></li>
-		                                <li><a href="#testimonials">Testimonials</a></li>
-		                                <li><a href="#pricing">Pricing</a></li>
-										<li><a href="https://billing.stripe.com/p/login/14k5ntbdn5S8fOE5kk">Manage Account</a></li>
-										<li><a href="https://toyiyo-llc.getrewardful.com/signup">Affiliates</a></li>
-		                            </ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-                <div class="container">                    
-                    <div class="bottom-border">
-                    	<div class="row y-middle">
-                    	    <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                    	        <ul class="copy-right-menu">
-                    	            <li><a href="https://app.toyiyo.com/legal/privacy">Privacy Policy</a></li>
-                    	            <li><a href="https://app.toyiyo.com/legal/terms">Terms Of Service</a></li>
-                    	        </ul>
-                    	    </div>
-                    	    <div class="col-lg-6">
-                    	        <div class="copyright text-lg-start text-center">
-                    	            <p>© Copyright Toyiyo, llc DBA resume-ai.me. All Rights Reserved</p>
-                    	        </div>
-                    	    </div>
-                    	</div>
-                    </div>
+    <!-- Main content Start -->
+    <div class="main-content">
+      <!--Full width header Start-->
+      <div class="full-width-header">
+        <!--Header Start-->
+        <header id="rs-header" class="rs-header header-style1 header-modify7">
+          <!-- Menu Start -->
+          <div class="menu-area menu-sticky">
+            <div class="container-fluid">
+              <div class="row-table">
+                <div class="col-cell header-logo">
+                  <div class="logo-area">
+                    <a href="index.html">
+                      <img
+                        class="normal-logo"
+                        src="assets/images/logo.png"
+                        alt="logo"
+                      />
+                      <img
+                        class="sticky-logo"
+                        src="assets/images/logo.png"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
                 </div>
+                <div class="col-cell">
+                  <div class="rs-menu-area">
+                    <div class="main-menu">
+                      <nav class="rs-menu hidden-md">
+                        <ul class="nav-menu">
+                          <li class="menu-item current-menu-item">
+                            <a href="#">Home</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="#about-us">About</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="#features">Features</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="#testimonials">Testimonials</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="#pricing">Pricing</a>
+                          </li>
+                          <li class="last-item menu-item">
+                            <a
+                              href="https://billing.stripe.com/p/login/14k5ntbdn5S8fOE5kk"
+                              >Manage Account</a
+                            >
+                          </li>
+                        </ul>
+                        <!-- //.nav-menu -->
+                      </nav>
+                    </div>
+                    <!-- //.main-menu -->
+                  </div>
+                </div>
+                <div class="col-cell">
+                  <div class="expand-btn-inner">
+                    <ul>
+                      <li class="btn-signin">
+                        <a
+                          class="signin-button"
+                          href="https://resume-ai.zapier.app/"
+                        >
+                          <span class="sign-text"
+                            ><i class="ri-user-3-line"></i> Sign In
+                          </span>
+                        </a>
+                      </li>
+                      <li class="btn-quote">
+                        <a id="signup-link" href="#"
+                          ><span class="btn-text"
+                            ><i class="ri-download-line"></i> Sign Up</span
+                          ></a
+                        >
+                      </li>
+                      <li class="nav-link">
+                        <a id="nav-expander" class="nav-expander bar" href="#">
+                          <div class="bar">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <span class="dot3"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-		</footer>
-		<!-- Footer End -->
+          </div>
+          <!-- Menu End -->
 
-		<!-- start scrollUp  -->
-		<div id="scrollUp" class="blue-color3">
-			<i class="fa-solid fa-angle-up"></i>
-		</div>
-		<!-- End scrollUp  -->
+          <!-- Canvas Mobile Menu start -->
+          <nav
+            class="right_menu_togle mobile-navbar-menu"
+            id="mobile-navbar-menu"
+          >
+            <div class="close-btn">
+              <a id="nav-close2" class="nav-close">
+                <div class="line">
+                  <span class="line1"></span>
+                  <span class="line2"></span>
+                </div>
+              </a>
+            </div>
+            <ul class="nav-menu">
+              <li class="menu-item current-menu-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#about-us">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="#features">Features</a>
+              </li>
+              <li class="menu-item">
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li class="menu-item">
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li class="last-item menu-item">
+                <a href="https://billing.stripe.com/p/login/14k5ntbdn5S8fOE5kk"
+                  >Manage Account</a
+                >
+              </li>
+            </ul>
+            <!-- //.nav-menu -->
 
-		<!-- Search Modal Start -->
-		<div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
-		    <div class="modal-dialog modal-dialog-centered">
-		        <div class="modal-content">
-		            <div class="search-block clearfix">
-		                <form>
-		                    <div class="form-group">
-		                        <input class="form-control" placeholder="Search Here..." type="text">
-		                    </div>
-		                </form>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-		<!-- Search Modal End -->
+            <!-- //.nav-menu -->
+            <div class="canvas-contact">
+              <ul>
+                <li class="btn-signin">
+                  <a class="signin-button" href="https://resume-ai.zapier.app/">
+                    <span class="sign-text"
+                      ><i class="ri-user-3-line"></i> Sign In
+                    </span>
+                  </a>
+                </li>
+                <li class="btn-quote">
+                  <a href="contact-1.html"
+                    ><span class="btn-text"
+                      ><i class="ri-download-line"></i> Download</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Canvas Menu end -->
+        </header>
+        <!--Header End-->
+      </div>
+      <!--Full width header End-->
 
-		<!-- modernizr js -->
-		<script src="assets/js/modernizr-2.8.3.min.js"></script>
-		<!-- jquery latest version -->
-		<script src="assets/js/jquery.min.js"></script>
-		<!-- Bootstrap v4.4.1 js -->
-		<script src="assets/js/bootstrap.min.js"></script>
-		<!-- op nav js -->
-		<script src="assets/js/jquery.nav.js"></script>
-		<!-- wow js -->
-		<script src="assets/js/wow.min.js"></script>
-		<!-- Skill bar js -->
-		<script src="assets/js/skill.bars.jquery.js"></script>
-		<!-- imagesloaded js -->
-		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-		<!-- Slick js -->
-		<script src="assets/js/slick.min.js"></script>
-		<!-- waypoints.min js -->
-		<script src="assets/js/waypoints.min.js"></script>
-		<!-- magnific popup js -->
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<!-- Tilt js popup js -->
-		<script src="assets/js/tilt.jquery.min.js"></script>
-		<!-- counterup.min js -->
-		<script src="assets/js/jquery.counterup.min.js"></script> 
-		<!-- contact form js -->
-		<script src="assets/js/contact.form.js"></script>
-		<!-- main js -->
-		<script src="assets/js/main.js"></script>
-	</body>
+      <!-- Banner Start -->
+      <div class="rs-banner banner-style10">
+        <div class="container custom2">
+          <div class="content-wrap">
+            <h1 class="title">RESUME-AI.ME</h1>
+            <h1 class="title">Get Noticed, Get Hired</h1>
+            <div class="description">
+              <p>
+                Empower Your Independence & Provide for Your Family's Future
+                with resume-ai.me
+              </p>
+            </div>
+            <div class="btn-part mt-40">
+              <a id="signup-button" class="readon started sasco" href="#">
+                <span class="btn-text">Sign Up Now</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-animate">
+          <div class="bnr-animation one">
+            <img
+              class="spiner"
+              src="assets/images/banner/style10/shape1.png"
+              alt=""
+            />
+          </div>
+          <div class="bnr-animation two">
+            <img
+              class="spiner"
+              src="assets/images/banner/style10/shape2.png"
+              alt=""
+            />
+          </div>
+          <div class="bnr-animation three">
+            <img
+              class="left-right2"
+              src="assets/images/banner/style10/shape3.png"
+              alt=""
+            />
+          </div>
+          <div class="bnr-animation four">
+            <img
+              class="scale"
+              src="assets/images/banner/style10/shape4.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Banner End -->
+
+      <!-- Partner Start -->
+      <div class="rs-partner partner-style2 partner-modify1 pt-70 pb-70">
+        <div class="container">
+          <div class="sec-title text-center mb-40">
+            <h3 class="title title3">
+              Trusted by hundreds of job seekers, now including you. Take action
+              now!
+            </h3>
+          </div>
+          <div class="slider partner-slide-1"></div>
+          <div class="ptnr-border-bottom"></div>
+        </div>
+      </div>
+      <!-- Partner End -->
+
+      <!-- About Start -->
+      <div
+        id="about-us"
+        class="rs-about about-style1 about-modify1 pt-110 pb-130 md-pt-10 md-pb-0"
+      >
+        <div class="container custom6">
+          <div class="row y-middle">
+            <div class="col-lg-6 md-mb-50">
+              <div class="about-img">
+                <img
+                  class="js-tilt"
+                  src="assets/images/about/style5/about-11.jpg"
+                  alt="Images"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="sec-title">
+                <h2 class="title pb-25">Invest in your future now</h2>
+                <p class="desc pb-15">
+                  We are dedicated to helping you land your dream job. Our
+                  comprehensive suite of services is designed to give you a
+                  competitive edge in today's job market. For only $30 a month,
+                  you gain unlimited access to our game-changing tools.
+                </p>
+                <p class="desc">
+                  Resume reviews, cover letter writing, curated job boards and
+                  more. Consider signing up with resume-ai.me. Invest in your
+                  future.
+                </p>
+                <div class="btn-part mt-45">
+                  <a class="readon started contact" href="#">
+                    <span class="btn-text">Get Started</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Feature Start -->
+      <div
+        id="features"
+        class="rs-feature feature-style2 feature-modify4 pb-140 md-pt-70 md-pb-80"
+      >
+        <div class="container">
+          <div class="row y-middle">
+            <div class="col-lg-6 md-mb-50">
+              <div class="feature-btn-wrap">
+                <div class="sec-title mb-40">
+                  <h2 class="title pb-25">
+                    Take Your Job Search To The Next Level
+                  </h2>
+                  <p class="desc pb-30">
+                    At resume-ai we understand the challenges of job hunting and
+                    offer comprehensive solutions to help job seekers stand out
+                    from the crowd.
+                  </p>
+                  <ul class="check-lists check-style6">
+                    <li class="list-item">
+                      <span class="icon-list-icon">
+                        <i class="fa-solid fa-check-circle"></i>
+                      </span>
+                      <span class="list-text">Expert resume reviews</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="icon-list-icon">
+                        <i class="fa-solid fa-check-circle"></i>
+                      </span>
+                      <span class="list-text">Personalized cover letters</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="icon-list-icon">
+                        <i class="fa-solid fa-check-circle"></i>
+                      </span>
+                      <span class="list-text">Interview training</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="icon-list-icon">
+                        <i class="fa-solid fa-check-circle"></i>
+                      </span>
+                      <span class="list-text">Curated job boards!</span>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="bnr-wrap">
+                  <li>
+                    <a class="readon started contact" href="#">
+                      <span class="btn-text">Get Started</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="feature-img">
+                <img
+                  class="js-tilt"
+                  src="assets/images/about/style5/about-12.jpg"
+                  alt="Images"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Feature End -->
+
+      <!-- Services Start -->
+      <div
+        class="rs-services services-style8 gray-bg15 pt-130 pb-130 md-pt-80 md-pb-80"
+      >
+        <div class="container">
+          <div class="sec-title text-center mb-55 md-mb-35">
+            <h2 class="title pb-25">
+              Multiple Tools In One Suite.<br />
+              What's Inside?
+            </h2>
+            <p class="desc">
+              Various of the best tools to monitor & manage every aspect of your
+              job Search. A must-have product<br />
+              to domainate the competition and land your dream job!
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6 mb-30">
+              <div class="services-item">
+                <div class="services-wrap">
+                  <div class="services-icon">
+                    <img
+                      src="assets/images/services/style10/ser-1.png"
+                      alt="Images"
+                    />
+                  </div>
+                  <div class="services-content">
+                    <h4 class="title">
+                      <a href="services-details.html">Resume Review</a>
+                    </h4>
+                    <p class="services-txt">
+                      Boost your resume with our AI Powered resume review
+                      service!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-30">
+              <div class="services-item">
+                <div class="services-wrap">
+                  <div class="services-icon">
+                    <img
+                      src="assets/images/services/style10/ser-2.png"
+                      alt="Images"
+                    />
+                  </div>
+                  <div class="services-content">
+                    <h4 class="title">
+                      <a href="services-details.html">Custom Cover Letters</a>
+                    </h4>
+                    <p class="services-txt">
+                      Create captivating cover letters that compel hiring
+                      managers to take notice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-30">
+              <div class="services-item">
+                <div class="services-wrap">
+                  <div class="services-icon">
+                    <img
+                      src="assets/images/services/style10/ser-3.png"
+                      alt="Images"
+                    />
+                  </div>
+                  <div class="services-content">
+                    <h4 class="title">
+                      <a href="services-details.html">Job Boards</a>
+                    </h4>
+                    <p class="services-txt">
+                      Comprehensive collection of job boards tailored to meet
+                      your specific needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 xl-mb-30">
+              <div class="services-item">
+                <div class="services-wrap">
+                  <div class="services-icon">
+                    <img
+                      src="assets/images/services/style10/ser-4.png"
+                      alt="Images"
+                    />
+                  </div>
+                  <div class="services-content">
+                    <h4 class="title">
+                      <a href="services-details.html">Interview Training</a>
+                    </h4>
+                    <p class="services-txt">
+                      AI interview preparation specifically to the job you're
+                      applying for.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 sm-mb-30">
+              <div class="services-item">
+                <div class="services-wrap">
+                  <div class="services-icon">
+                    <img
+                      src="assets/images/services/style10/ser-5.png"
+                      alt="Images"
+                    />
+                  </div>
+                  <div class="services-content">
+                    <h4 class="title">
+                      <a href="services-details.html"
+                        >Soon! - Application tracker</a
+                      >
+                    </h4>
+                    <p class="services-txt">
+                      Understand the status of each one of your applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="services-item">
+                <div class="services-wrap">
+                  <div class="services-icon">
+                    <img
+                      src="assets/images/services/style10/ser-6.png"
+                      alt="Images"
+                    />
+                  </div>
+                  <div class="services-content">
+                    <h4 class="title">
+                      <a href="services-details.html"
+                        >Soon! - Email Follow-up</a
+                      >
+                    </h4>
+                    <p class="services-txt">
+                      Automate following up during the application process so
+                      you can outshine the competition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Services End -->
+
+      <!-- Services Start -->
+      <div
+        id="rs-services"
+        class="rs-services services-style9 pt-130 pb-130 md-pt-80 md-pb-80"
+      >
+        <div class="container">
+          <div class="row y-middle">
+            <div class="col-lg-6 md-mb-50">
+              <div class="sec-title mb-40">
+                <h2 class="title pb-25">Land your dream job!</h2>
+                <p class="desc">
+                  No more dead linkedin links, enhance your resume, create
+                  custom tailored cover letters, and practice for interviews.
+                </p>
+              </div>
+              <div class="services-item mb-30">
+                <div class="services-icon">
+                  <img
+                    src="assets/images/services/style11/icons/home1/1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services-text">
+                  <h2 class="title">Resume Review</h2>
+                  <p>
+                    We use advanced AI technology to analyze your resume for
+                    grammar, punctuation, sentence structure, and content based
+                    on your industry. Our app also checks for ATS compatibility
+                    to ensure that your resume is optimized for applicant
+                    tracking systems. With unlimited reviews, you can refine
+                    your resume until it's perfect, without any extra costs.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item mb-30">
+                <div class="services-icon">
+                  <img
+                    src="assets/images/services/style11/icons/home1/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services-text">
+                  <h2 class="title">Custom Cover Letters</h2>
+                  <p>
+                    We understand the crucial role a well-crafted cover letter
+                    plays in capturing the attention of employers and showcasing
+                    your unique value. Our AI-powered platform empowers you to
+                    create compelling cover letters that captivates and compels
+                    hiring managers to take notice.
+                  </p>
+                </div>
+              </div>
+              <div class="services-item">
+                <div class="services-icon">
+                  <img
+                    src="assets/images/services/style11/icons/home1/3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services-text">
+                  <h2 class="title">Interview Practice</h2>
+                  <p>
+                    Preparing for job interviews can be daunting, but with
+                    resume-ai.me's AI-Powered interview preparation, you can
+                    confidently tackle any interview. Our cutting-edge AI
+                    technology tailors interview preparation specifically to the
+                    job you're applying for, giving you a competitive edge like
+                    never before.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="services-img">
+                <img
+                  class="js-tilt"
+                  src="assets/images/services/style11/ser-image11.jpg"
+                  alt="Images"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Services End -->
+
+      <!-- Pricing Start -->
+      <div
+        id="pricing"
+        class="pricing-container rs-pricing-container pricing-style1 pricing-modify4 gray-bg16 pt-130 pb-130 md-pt-80 md-pb-80 text-centered"
+      >
+        <div class="sec-title text-center mb-55 md-mb-35">
+          <h2 class="title">
+            Select the right Option<br />
+            for you.
+          </h2>
+        </div>
+        <div class="pricing-switcher">
+          <p class="fieldset mnt-ac">
+            <input
+              type="radio"
+              name="duration-1"
+              value="monthly"
+              id="monthly-1"
+              checked=""
+            />
+            <label for="monthly-1" id="rsmnt" class="rs-mnt">Monthly </label>
+            <input
+              type="radio"
+              name="duration-1"
+              value="yearly"
+              id="yearly-1"
+            />
+            <label for="yearly-1" id="rsyrs" class="rs-yrs">Yearly </label>
+            <span class="switch"></span>
+          </p>
+        </div>
+        <div class="container text-center">
+          <ul class="bounce-invert">
+            <li class="exclusive md-mb-50">
+              <ul class="pricing-wrapper">
+                <li data-type="monthly" class="is-visible">
+                  <header class="pricing-header">
+                    <h3 class="title">Monthly</h3>
+                    <div class="price-inner">
+                      <div class="price">$30.00</div>
+                      <span>/ Month</span>
+                    </div>
+                  </header>
+                  <div class="pricing-body">
+                    <div class="features">
+                      <ul>
+                        <li>Unlimited Resume Reviews</li>
+                        <li>Unlimited Cover Letters</li>
+                        <li>Unlimited Interview Training</li>
+                        <li>Unlimited Job Board Access</li>
+                        <li>Unlimited access to all future enhancements</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="pricing-footer">
+                    <a href="#">Get Started</a>
+                  </footer>
+                </li>
+                <li data-type="yearly" class="is-hidden mx-auto">
+                  <header class="pricing-header">
+                    <h3 class="title">Yearly</h3>
+                    <div class="price-inner">
+                      <div class="price">$300.00</div>
+                      <span>/ Year</span>
+                    </div>
+                  </header>
+                  <div class="pricing-body">
+                    <div class="features">
+                      <ul>
+                        <li>Unlimited Resume Reviews</li>
+                        <li>Unlimited Cover Letters</li>
+                        <li>Unlimited Interview Training</li>
+                        <li>Unlimited Job Board Access</li>
+                        <li>Unlimited access to all future enhancements</li>
+                        <li class="fa fa-dollar">
+                          <strong>Save $60.00 per year</strong>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="pricing-footer">
+                    <a href="#">Get Started</a>
+                  </footer>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Pricing End -->
+
+      <!-- Testimonial Section End -->
+      <div
+        id="testimonials"
+        class="rs-testimonial testimonial-style2 testimonial-modify7 pt-130 pb-170 md-pt-80 md-pb-120"
+      >
+        <div class="container custom4">
+          <div class="sec-title text-center mb-55">
+            <h2 class="title">
+              What our customers<br />
+              are saying
+            </h2>
+          </div>
+          <div class="slider testi-slide-1">
+            <div class="testi-item">
+              <div class="item-content">
+                <span>
+                  <img
+                    class="normal-logo"
+                    src="assets/images/testimonial/style1/quote-1.png"
+                    alt="Testimonial"
+                  />
+                  <img
+                    class="hover-logo"
+                    src="assets/images/testimonial/style1/quote-7.png"
+                    alt="Testimonial"
+                  />
+                </span>
+                <p>
+                  Fast and Insightful - It helped me highlight my strategic
+                  strengths, gave formatting tips, and rewrote the about me
+                  section tailored to a job I wanted to apply to.
+                </p>
+              </div>
+              <div class="testi-content">
+                <div class="rattings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star star-color"></i>
+                </div>
+                <div class="testi-information">
+                  <div class="testi-name">Alejandra Perez</div>
+                  <span class="testi-title">Medical Technologist</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-item">
+              <div class="item-content">
+                <span>
+                  <img
+                    class="normal-logo"
+                    src="assets/images/testimonial/style1/quote-1.png"
+                    alt="Testimonial"
+                  />
+                  <img
+                    class="hover-logo"
+                    src="assets/images/testimonial/style1/quote-7.png"
+                    alt="Testimonial"
+                  />
+                </span>
+                <p>
+                  A revolutionary tool - This AI-powered solution streamlines
+                  the entire job search process, taking the pain of crafting the
+                  perfect resume and application.
+                </p>
+              </div>
+              <div class="testi-content">
+                <div class="rattings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star star-color"></i>
+                </div>
+                <div class="testi-information">
+                  <div class="testi-name">Anastasia Veselova</div>
+                  <span class="testi-title">Anxiety Disorder</span>
+                </div>
+              </div>
+            </div>
+            <div class="testi-item">
+              <div class="item-content">
+                <span>
+                  <img
+                    class="normal-logo"
+                    src="assets/images/testimonial/style1/quote-1.png"
+                    alt="Testimonial"
+                  />
+                  <img
+                    class="hover-logo"
+                    src="assets/images/testimonial/style1/quote-7.png"
+                    alt="Testimonial"
+                  />
+                </span>
+                <p>
+                  Blown Away - I recently used resume_ai as a tool to improve my
+                  resume and I was blown away by its capabilities. It was quite
+                  easy to use and the feedback it provided for my resume was
+                  accurate. The cover letter writing tool was pretty spot on
+                  too. Check them out!.
+                </p>
+              </div>
+              <div class="testi-content">
+                <div class="rattings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star star-color"></i>
+                </div>
+                <div class="testi-information">
+                  <div class="testi-name">Ana Maria Delgado</div>
+                  <span class="testi-title">Instructional Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial Section End -->
+
+      <!-- Faq Section Start -->
+      <div
+        class="rs-faq faq-style1 faq-modify6 bg12 pt-140 pb-140 md-pt-80 md-pb-80"
+      >
+        <div class="container">
+          <div class="row y-middle">
+            <div class="col-lg-6 md-mb-50">
+              <div class="sec-title mb-45">
+                <h2 class="title pb-25 white-color">
+                  Are you ready to transform your job search?
+                </h2>
+                <p class="desc desc3">
+                  Grab your FREE guide and take the first step towards unlocking
+                  your dream job.
+                </p>
+              </div>
+              <div class="faq-content">
+                <div id="accordion" class="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="card-link"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        >The Power of AI in Your Hands</a
+                      >
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      data-bs-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        In a competitive job market, having a standout resume is
+                        non-negotiable. But crafting a compelling resume can be
+                        daunting, especially when you're up against countless
+                        others vying for the same positions. This is where
+                        resume-ai.me steps in - we bring the power of AI to your
+                        fingertips, revolutionizing the way you present your
+                        skills and experience.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="card-link collapsed"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        >Your Pathway to Success</a
+                      >
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      data-bs-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        We believe that everyone deserves a chance to shine
+                        professionally. Our AI-driven platform ensures that your
+                        resume, cover letter, and interview process not only
+                        gets noticed but leaves a lasting impression on
+                        employers. Whether you're an entry-level professional or
+                        a seasoned expert, our technology tailors your resume to
+                        match your target job description, highlighting your
+                        strengths in alignment with the role's requirements.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="card-link collapsed"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        >Empowering Independence</a
+                      >
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      data-bs-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        Being independent is more than just a financial state,
+                        it's a mindset. We're committed to empowering you to
+                        regain control over your career path. By equipping you
+                        with a compelling set of AI tools that set your job
+                        search journey to align with your aspirations, we're
+                        helping you take the first step toward regaining your
+                        professional independence.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="card-link collapsed"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        >Your FREE Guide to Enhancing Your Resume</a
+                      >
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      data-bs-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        As a gesture of our dedication, we're offering you a
+                        FREE downloadable PDF resume guide that's packed with
+                        invaluable insights on how to enhance your resume. This
+                        guide is tailor-made for those who are unemployed or
+                        recently laid off, providing actionable tips to revamp
+                        your resume and stand out in today's competitive job
+                        landscape.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pl-65 md-pl-15">
+              <!-- Contact Start -->
+              <div class="rs-contact contact-style2 contact-modify2">
+                <div class="content-wrap">
+                  <div class="sec-title mb-30">
+                    <h2 class="title">Grab your FREE resume guide today!</h2>
+                  </div>
+                  <div id="form-messages"></div>
+                  <form
+                    id="contact-form"
+                    method="post"
+                    action="https://hooks.zapier.com/hooks/catch/3042365/35mvhhi/"
+                  >
+                    <fieldset>
+                      <div class="row">
+                        <div class="col-sm-12 mb-25">
+                          <div class="form-group">
+                            <i class="ri-user-3-line"></i>
+                            <input
+                              class="from-control"
+                              type="text"
+                              id="name"
+                              name="name"
+                              placeholder="Enter Your name"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12 mb-25">
+                          <div class="form-group">
+                            <i class="ri-user-3-line"></i>
+                            <input
+                              class="from-control"
+                              type="text"
+                              id="lastName"
+                              name="lastName"
+                              placeholder="Enter Your last name"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-12 mb-25">
+                          <div class="form-group">
+                            <i class="ri-mail-line"></i>
+                            <input
+                              class="from-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              placeholder="Enter your email address"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-part">
+                        <div class="form-group mt-25">
+                          <input
+                            class="readon submit submit3"
+                            type="submit"
+                            value="Get my guide now!"
+                          />
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="sec-title text-right pt-40 md-text-center">
+                  <h5 class="title title7 white-color">
+                    Don't miss out on the best guide out there
+                  </h5>
+                </div>
+              </div>
+
+              <div>
+                <!-- thank you for downloading-->
+                <div
+                  class="rs-contact contact-style2 contact-modify2"
+                  id="thankYouMessage"
+                  aria-labelledby="thankYouMessage"
+                  aria-hidden="true"
+                  style="display: none"
+                >
+                  <div class="thank-you-pop">
+                    <h1>Thank You!</h1>
+                    <p>
+                      Your Free PDF will arrive soon, as a thank you, here is a
+                      coupon code to get you 30% off on your first month
+                    </p>
+                    <a href="#">
+                      <h3 class="cupon-pop">CODE: <span>THANKYOU</span></h3>
+                    </a>
+                  </div>
+                  <div class="btn-part mt-45">
+                    <a class="readon started contact promo" href="#">
+                      <span class="btn-text">Get Your Discount Now!</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Contact End -->
+            </div>
+          </div>
+        </div>
+        <div class="faq-animate">
+          <div class="arrow-animate">
+            <img src="assets/images/contact/arrow-indicator.png" alt="images" />
+          </div>
+        </div>
+      </div>
+      <!-- Faq Section End -->
+
+      <!-- Faq Section Start -->
+      <div class="rs-cta bg11 pt-85 pb-85 md-pt-65 md-pb-65">
+        <div class="container">
+          <div class="sec-title text-center">
+            <h2 class="title pb-22 white-color">
+              Get started with resume-ai.me today
+            </h2>
+            <p class="desc desc3">
+              Start investing in yourself and get the job of your dreams. Cancel
+              anytime.
+            </p>
+            <div class="btn-part mt-40">
+              <a class="readon started sasco" href="#">
+                <span class="btn-text">Start Today</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Faq Section End -->
+    </div>
+    <!-- Main content End -->
+
+    <!-- Footer Start -->
+    <footer id="rs-footer" class="rs-footer footer-main-home footer-modify10">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-lg-4 md-mb-20">
+              <div class="footer-logo">
+                <a href="index.html"
+                  ><img src="assets/images/logo.png" alt=""
+                /></a>
+              </div>
+              <p class="widget-desc"></p>
+              <ul class="footer-social md-mb-30">
+                <li>
+                  <a href="https://www.facebook.com/resumeai.me"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/resume_ai"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/resume-ai-me"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@resume-ai/"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/@resume_ai.me"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-8 pl-110 md-pl-15">
+              <div class="row">
+                <div class="col-lg-4 md-mb-10">
+                  <h3 class="footer-title">About</h3>
+                  <ul class="site-map">
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li>
+                      <a
+                        href="https://billing.stripe.com/p/login/14k5ntbdn5S8fOE5kk"
+                        >Manage Account</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://toyiyo-llc.getrewardful.com/signup"
+                        >Affiliates</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="bottom-border">
+            <div class="row y-middle">
+              <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
+                <ul class="copy-right-menu">
+                  <li>
+                    <a href="https://app.toyiyo.com/legal/privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://app.toyiyo.com/legal/terms"
+                      >Terms Of Service</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <div class="copyright text-lg-start text-center">
+                  <p>
+                    © Copyright Toyiyo, llc DBA resume-ai.me. All Rights
+                    Reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- start scrollUp  -->
+    <div id="scrollUp" class="blue-color3">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- End scrollUp  -->
+
+    <!-- Search Modal Start -->
+    <div
+      aria-hidden="true"
+      class="modal fade search-modal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="search-block clearfix">
+            <form>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  placeholder="Search Here..."
+                  type="text"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Modal End -->
+
+    <!-- modernizr js -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap v4.4.1 js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- op nav js -->
+    <script src="assets/js/jquery.nav.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Skill bar js -->
+    <script src="assets/js/skill.bars.jquery.js"></script>
+    <!-- imagesloaded js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- waypoints.min js -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- magnific popup js -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Tilt js popup js -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <!-- counterup.min js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- contact form js -->
+    <script src="assets/js/contact.form.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
