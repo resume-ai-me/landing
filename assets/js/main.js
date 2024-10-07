@@ -734,4 +734,83 @@
     function getClientReferenceId() {
         return window.Rewardful && window.Rewardful.referral || ('checkout_' + (new Date).getTime());
     }
+
+    // prevent invalid form submission
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('submit-button').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default button action
+    
+            let isValid = true;
+    
+            // Clear previous error messages
+            document.getElementById('name-error').textContent = '';
+            document.getElementById('lastName-error').textContent = '';
+            document.getElementById('email-error').textContent = '';
+    
+            // Validate name
+            const name = document.getElementById('name').value.trim();
+            const namePattern = /^[a-zA-Z\s]+$/;
+            if (name === '') {
+                document.getElementById('name-error').textContent = 'Name is required.';
+                isValid = false;
+            } else if (!namePattern.test(name)) {
+                document.getElementById('name-error').textContent = 'Name can only contain letters and spaces.';
+                isValid = false;
+            }
+    
+            // Validate last name
+            const lastName = document.getElementById('lastName').value.trim();
+            if (lastName === '') {
+                document.getElementById('lastName-error').textContent = 'Last name is required.';
+                isValid = false;
+            } else if (!namePattern.test(lastName)) {
+                document.getElementById('lastName-error').textContent = 'Last name can only contain letters and spaces.';
+                isValid = false;
+            }
+    
+            // Validate email
+            const email = document.getElementById('email').value.trim();
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (email === '') {
+                document.getElementById('email-error').textContent = 'Email is required.';
+                isValid = false;
+            } else if (!emailPattern.test(email)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+                isValid = false;
+            }
+    
+            // Debugging logs
+            console.log('isValid:', isValid);
+    
+            // Prevent form submission if any field is invalid
+            if (!isValid) {
+                console.log('Form submission prevented');
+                return false; // Ensure form submission is prevented
+            } else {
+                console.log('Form is valid, submission allowed');
+    
+                // Collect form data
+                const formData = {
+                    name: name,
+                    lastName: lastName,
+                    email: email
+                };
+    
+                // Send form data using fetch
+                fetch('https://hooks.zapier.com/hooks/catch/3042365/35mvhhi/', {
+                    method: 'POST',
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    // Handle success (e.g., show a success message)
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    // Handle error (e.g., show an error message)
+                });
+            }
+        });
+    });
 })(jQuery);

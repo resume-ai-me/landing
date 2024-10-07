@@ -1150,99 +1150,52 @@
                     <h2 class="title">Grab your FREE resume guide today!</h2>
                   </div>
                   <div id="form-messages"></div>
-                  <form
-                    id="contact-form"
-                    method="post"
-                    action="https://hooks.zapier.com/hooks/catch/3042365/35mvhhi/"
-                  >
-                    <fieldset>
-                      <div class="row">
-                        <div class="col-sm-12 mb-25">
-                          <div class="form-group">
-                            <i class="ri-user-3-line"></i>
-                            <input
-                              class="from-control"
-                              type="text"
-                              id="name"
-                              name="name"
-                              placeholder="Enter Your name"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-12 mb-25">
-                          <div class="form-group">
-                            <i class="ri-user-3-line"></i>
-                            <input
-                              class="from-control"
-                              type="text"
-                              id="lastName"
-                              name="lastName"
-                              placeholder="Enter Your last name"
-                              required=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-12 mb-25">
-                          <div class="form-group">
-                            <i class="ri-mail-line"></i>
-                            <input
-                              class="from-control"
-                              type="text"
-                              id="email"
-                              name="email"
-                              placeholder="Enter your email address"
-                              required=""
-                            />
-                          </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-sm-12 mb-25">
+                      <div class="form-group">
+                        <i class="ri-user-3-line"></i>
+                        <input
+                          class="from-control"
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="Enter Your name"
+                        />
+                        <div id="name-error" class="error-message"></div>
                       </div>
-                      <div class="btn-part">
-                        <div class="form-group mt-25">
-                          <input
-                            class="readon submit submit3"
-                            type="submit"
-                            value="Get my guide now!"
-                          />
-                        </div>
+                    </div>
+                    <div class="col-sm-12 mb-25">
+                      <div class="form-group">
+                        <i class="ri-user-3-line"></i>
+                        <input
+                          class="from-control"
+                          type="text"
+                          id="lastName"
+                          name="lastName"
+                          placeholder="Enter Your last name"
+                        />
+                        <div id="lastName-error" class="error-message"></div>
                       </div>
-                    </fieldset>
-                  </form>
-                </div>
-                <div class="sec-title text-right pt-40 md-text-center">
-                  <h5 class="title title7 white-color">
-                    Don't miss out on the best guide out there
-                  </h5>
-                </div>
-              </div>
-
-              <div>
-                <!-- thank you for downloading-->
-                <div
-                  class="rs-contact contact-style2 contact-modify2"
-                  id="thankYouMessage"
-                  aria-labelledby="thankYouMessage"
-                  aria-hidden="true"
-                  style="display: none"
-                >
-                  <div class="thank-you-pop">
-                    <h1>Thank You!</h1>
-                    <p>
-                      Your Free PDF will arrive soon, as a thank you, here is a
-                      coupon code to get you 30% off on your first month
-                    </p>
-                    <a href="#">
-                      <h3 class="cupon-pop">CODE: <span>THANKYOU</span></h3>
-                    </a>
-                  </div>
-                  <div class="btn-part mt-45">
-                    <a class="readon started contact promo" href="#">
-                      <span class="btn-text">Get Your Discount Now!</span>
-                    </a>
+                    </div>
+                    <div class="col-sm-12 mb-25">
+                      <div class="form-group">
+                        <i class="ri-mail-line"></i>
+                        <input
+                          class="from-control"
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Enter your email address"
+                        />
+                        <div id="email-error" class="error-message"></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <button id="submit-button" class="btn btn-primary">Submit</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Contact End -->
             </div>
           </div>
         </div>
