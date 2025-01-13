@@ -805,7 +805,8 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log('Success:', data);
-                    // Handle success (e.g., show a success message)
+                    // Show thank you message
+                    document.getElementById('thankYouMessage').style.display = 'block';
                 })
                 .catch((error) => {
                     console.error('Error:', error);
