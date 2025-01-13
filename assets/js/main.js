@@ -710,8 +710,9 @@
         const faqGetStartedButtons = document.querySelectorAll(".readon.started.sasco");
         const getStartedButtons = document.querySelectorAll(".readon.started.contact");
         const footerLinks = document.querySelectorAll(".pricing-footer a");
+        const couponLink = document.querySelectorAll(".cupon-pop").parentNode;
         const clientReferenceId = getClientReferenceId();
-        const couponLink = document.querySelector(".cupon-pop").parentNode;
+
 
         signupLink.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
         signupButton.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
