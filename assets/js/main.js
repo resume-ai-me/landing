@@ -713,14 +713,9 @@
         const couponLink = document.querySelectorAll(".cupon-pop").parentNode;
         const clientReferenceId = getClientReferenceId();
 
-
-        signupLink.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
-        signupButton.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
-        getStartedButtonPromo.href = `https://buy.stripe.com/00gbLBbsW9kSgEgeUW?client_reference_id=${clientReferenceId}&prefilled_promo_code=THANKYOU&utm_source=guide`;
-        couponLink.href = `https://buy.stripe.com/00gbLBbsW9kSgEgeUW?client_reference_id=${clientReferenceId}&prefilled_promo_code=THANKYOU&utm_source=guide`;
         footerLinks.forEach(button => {
            button.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
-        })
+        });
        
         getStartedButtons.forEach(button => {
             button.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
@@ -729,6 +724,10 @@
         faqGetStartedButtons.forEach(button => {
             button.href = `https://buy.stripe.com/dR64j9dB41Sq9bO001?client_reference_id=${clientReferenceId}`;
           });
+          signupLink.href = `https://buy.stripe.com/00gbLBbsW9kSgEgeUW?client_reference_id=${clientReferenceId}&prefilled_promo_code=THANKYOU&utm_source=guide`;
+          signupButton.href = `https://buy.stripe.com/00gbLBbsW9kSgEgeUW?client_reference_id=${clientReferenceId}&prefilled_promo_code=THANKYOU&utm_source=guide`;
+          getStartedButtonPromo.href = `https://buy.stripe.com/00gbLBbsW9kSgEgeUW?client_reference_id=${clientReferenceId}&prefilled_promo_code=THANKYOU&utm_source=guide`;
+          couponLink.href = `https://buy.stripe.com/00gbLBbsW9kSgEgeUW?client_reference_id=${clientReferenceId}&prefilled_promo_code=THANKYOU&utm_source=guide`;
       });
 
     ///******** rewardful ********/
